@@ -72,6 +72,6 @@ Agentic AI acts as an autonomous, goal-oriented digital worker. `Identic AI` is 
     - `What ships at the end:` A piece of workforce
     - `Governed by:` Seven Invariants
 
-![The Two Modes of General Agent Use](assets/Img4.png)
+![The Two Modes of General Agent Use](assets/img4.png)
 
 Read [Thesis](https://agentfactory.panaversity.org/docs/thesis), [Quick Start Crash Courses](https://agentfactory.panaversity.org/docs/getting-started) and [AI Prompting in 2026](https://agentfactory.panaversity.org/docs/ai-prompting-2026) before next class
