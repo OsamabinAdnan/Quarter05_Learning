@@ -1,6 +1,6 @@
 # Vercel Eve Agentic Framework - Projects
 
-> Exploring [Eve](https://eve.ai) — Vercel's agentic framework for building AI agents.
+> Exploring [Eve](https://vercel.com/eve) — Vercel's agentic framework for building AI agents.
 
 This repository contains two experimental projects built using the Eve framework, showcasing different approaches to building AI-powered agents with modern web technologies.
 
