@@ -1,0 +1,1 @@
+Official YouTube Playlist: **[FDE-100: Getting Paid in the AI Era as a Forward Deployed Engineer](https://www.youtube.com/playlist?list=PLI2ngvEnEe7c)**
