@@ -44,6 +44,12 @@
 - Shows how n8n turns models into agents through triggers, memory, tools, and execution loops.
 - Connects technical architecture to portfolio building, cost management, and production readiness.
 
+### Lesson 07 — Architecting Single and Multi-Agent AI Workflows in n8n
+- Contrasts sequential automation with agentic workflows built around delegated reasoning.
+- Explains the anatomy of a single-agent setup, including chat triggers, models, memory, and tools.
+- Shows how semantic tool selection, prompt context, and logs support reliable agent behavior.
+- Walks through a multi-agent newsletter pipeline from research and planning to editing and delivery.
+
 ### 17 Essential n8n Nodes for Automation Mastery
 - Applies the 80/20 rule to identify the highest-value n8n nodes for workflow engineering.
 - Covers triggers, storage, data transformation, logic routing, connectivity, and AI nodes.
