@@ -253,11 +253,34 @@ In a complex organization, knowledge is often tiered to ensure specialized exper
 - **Vertical KSoRs:** These are domain-specific knowledge layers. A bank might have a "Credit Analysis KSoR" containing the exact rules for loan approval and ratio analysis.
 - **Systems of Context:** These are horizontal layers that connect various Records (SOR and KSoR) to actual work execution. While the KSoR provides the "how," the System of Context provides the environment where that knowledge is applied to real-time data.
 
+---
+
+<div align="center">
+    <img src='assets/Class03-15.jpeg' alt='Ecosystem Integration: Vertical KSoRs and Systems of Context' width=800>
+    <p>
+        <b><u>Ecosystem Integration: Vertical KSoRs and Systems of Context</u></b>
+    </p>
+</div>
+
+---
+
 ### The Role of the FDE and the Digital Twin
 
 The Forward Deployed Engineer (FDE) is the primary architect responsible for building these vertical layers. Their ultimate goal is often the creation of an "Expert's Digital Twin" (e.g., a "Bashir Bot"). Without a KSoR, a digital twin is prone to giving conflicting or scattered advice because it lacks a grounded framework. The FDE ensures that the digital twin operates within a KSoR-governed boundary, preventing it from providing dangerous, conflicting answers—such as varying the dosage of medicine—across different interactions.
 
 This brings us to the technical requirements necessary for a Forward Deployed Engineer to begin implementing these systems.
+
+---
+
+<div align="center">
+    <img src='assets/Class03-16.jpeg' alt='The Role of the FDE and the Digital Twin' width=800>
+    <p>
+        <b><u>The Role of the FDE and the Digital Twin</u></b>
+    </p>
+</div>
+
+---
+
 
 ## 5. Technical Implementation: Prerequisites and Syntax
 
@@ -274,7 +297,8 @@ To ensure cross-platform compatibility and stability, KSoR deployment requires a
 To create a foundation for governed AI operations, the FDE initializes a project using a standardized command structure. To initialize a new project:
 
 ```bash
-pnpm create KSoR hello-KSoR
+npx @panaversity/ksor@latest init my-knowledge-sor
+cd my-knowledge-sor && npm install && npm run dev
 ```
 
 This command generates a structured project containing the essential /knowledge directory where the "One Official Book" will reside.
@@ -284,6 +308,17 @@ This command generates a structured project containing the essential /knowledge 
 A common misconception is that KSoR is simply a standard RAG (Retrieval-Augmented Generation) implementation. In reality, KSoR is the governed infrastructure that makes RAG reliable.
 
 While RAG is a technical method for semantic retrieval, KSoR is the authoritative "Governance Envelope." Standard RAG often searches an "unverified junk drawer" of files. KSoR ensures that the retrieval source is signed, versioned, and human-approved. By providing these boundaries, KSoR transforms the LLM from a stochastic guesser into a deterministic worker within a specified boundary.
+
+---
+
+<div align="center">
+    <img src='assets/Class03-17.jpeg' alt='Comparative Governance: KSoR vs. Retrieval-Augmented Generation (RAG)' width=800>
+    <p>
+        <b><u>Comparative Governance: KSoR vs. Retrieval-Augmented Generation (RAG)</u></b>
+    </p>
+</div>
+
+---
 
 ## Final Summary
 
