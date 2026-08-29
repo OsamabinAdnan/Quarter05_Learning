@@ -50,6 +50,16 @@
 - Shows how semantic tool selection, prompt context, and logs support reliable agent behavior.
 - Walks through a multi-agent newsletter pipeline from research and planning to editing and delivery.
 
+### Lesson 08 — Multi-Agent Automation and RAG Implementation in n8n
+- Explores the evolution from single-agent to multi-agent architectures with task isolation and specialization.
+- Details end-to-end newsletter automation pipeline from schedule triggers to Gmail delivery.
+- Covers workflow execution mechanics, sequential processing logic, and execution log inspection.
+- Compares AI Agents vs Basic LLM Chains with decision logic and Switch Node routing implementation.
+- Explains advanced modularity through sub-workflows, API integration, and the "Sugar in Tea" decoupling principle.
+- Demonstrates RAG pipeline architecture with Pinecone vector database and embedding model integration.
+- Provides technical infrastructure setup for Google Cloud Console OAuth 2.0 and Pinecone configuration.
+- Includes data ingestion, text chunking, and query generation phases with troubleshooting insights.
+
 ### 17 Essential n8n Nodes for Automation Mastery
 - Applies the 80/20 rule to identify the highest-value n8n nodes for workflow engineering.
 - Covers triggers, storage, data transformation, logic routing, connectivity, and AI nodes.

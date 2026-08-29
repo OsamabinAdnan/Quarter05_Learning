@@ -112,9 +112,27 @@ By pairing the 'Call n8n Workflow' tool with the 'When Executed by Another Workf
 - **Google Sheets:** Utilized via the "Get Rows" operation. This allows the system to treat spreadsheets as structured databases, fetching specific document IDs and sheet names to feed data into agent prompts.
 - **HTTP Request Node:** This serves as the universal connector for external APIs. It handles headers and JSON payloads. A critical operational "gotcha" is the HTTP 429 (Rate Limit) error. For instance, if an API limits requests to 5, the architecture must include retry logic or iterative testing to handle these limits gracefully without failing the entire execution.
 
+---
+
+<div align="center">
+  <img src="assets/Lesson08_04.jpg" alt="Advanced Modularity: Sub-Workflows and API Integration" width="800">
+  <p><b><u>Advanced Modularity: Sub-Workflows and API Integration</u></b></p>  
+</div>
+
+---
+
 ## 5. The RAG Pipeline: Vector Search and Pinecone Integration
 
 Retrieval-Augmented Generation (RAG) is the preferred architectural pattern for providing LLMs with up-to-date, private context. While Fine-Tuning can actually degrade a model's existing capabilities and requires significant hardware overhead, RAG provides a grounded knowledge base that prevents hallucinations without modifying the model's weights.
+
+---
+
+<div align="center">
+  <img src="assets/Lesson08_05.jpeg" alt="RAG Pipeline: Vector Search and Pinecone Integration" width="800">
+  <p><b><u>RAG Pipeline: Vector Search and Pinecone Integration</u></b></p>  
+</div>
+
+---
 
 ### Technical Infrastructure Setup
 
@@ -128,6 +146,21 @@ The ingestion pipeline follows a strict sequence:
 - **Binary Download:** Files are retrieved from Google Drive and handled as binary data.
 - **Text Chunking:** The Recursive Character Splitter breaks text into 1,000-character chunks. To ensure no data is lost during the split, the Chunk Overlap should be managed (often set to zero in simple configurations, or adjusted for context continuity).
 - **Query & Generation:** During the query phase, the Vector Store Tool uses the same embedding model to perform a similarity search. It retrieves the most relevant 1,000-character chunks and provides them as context to the LLM, allowing the model to generate a response grounded in private documentation.
+
+---
+
+<div align="center">
+  <img src="assets/Lesson08_06.png" alt="RAG Pipeline: Vector Insert and Pinecone Integration" width="800">
+  <p><b><u>RAG Pipeline: Vector Insert and Pinecone Integration</u></b></p>  
+</div>
+
+---
+
+<div align="center">
+  <img src="assets/Lesson08_07.png" alt="RAG Pipeline: Query and Generation" width="800">
+  <p><b><u>RAG Pipeline: Query and Generation</u></b></p>  
+</div>
+
 
 ## 6. Operational FAQ and Troubleshooting Insights
 
