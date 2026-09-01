@@ -30,6 +30,17 @@ Comprehensive class notes from GIAIC's Final Marathon covering the transition fr
 
 ---
 
+### Class 03 (August 30, 2026): AI Fluency and Anthropic Certification Roadmap
+
+- **Strategic Pivot**: Moves the program from experimental loop engineering to a formal Anthropic/Panaversity certification track aligned with global AI benchmarks
+- **Certification Structure**: Four-tier roadmap covering CCAO-F/PCAO-F, CCAR-F/PCAR-F, CCDV-F/PCDV-F, and CCAR-P/PCAR-P, with the internship bridge, partner email requirement, 720/1000 passing score, and one-year renewal cycle
+- **AI Fluency Framework**: Defines AI fluency through the four pillars—effective, efficient, ethical, and safe—and the three interaction modes: automation, augmentation, and agency
+- **Execution & Governance**: Applies the 4Ds, the 10-80-10 rule, Agent Factory, Digital FTEs, and study-group rules to turn knowledge into disciplined AI operations
+
+**[Full Notes](Week02/Class03_30082026/Readme.md)**
+
+---
+
 ## Learning Trajectory
 
 **Week 01**: Market shift understanding, FDE role definition, System of Record architecture (RAG/MCP)  
