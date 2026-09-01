@@ -6,9 +6,9 @@ YT Video Link **[How I Make Accurate Study Notes With ChatGPT & Claude in 2 mins
 
 First, ChatGPT synthesises the information. You have two routes: upload a file you already own, or let ChatGPT research the topic on its own. For both routes, all you need to change in the first prompt is the **topic** and the **learning level**.  I’ll show you both, starting with the research route.
 
-```
 #### **Prompt 1**
 
+```
 Topic: `[define the topic you wish to create study notes for]`
 
 Learning Level: `[define the students' level]`
@@ -66,8 +66,9 @@ Again, the only fields you customise are the topic and the learning level. Once 
 
 Back in the same conversation, I switch on the ‘Create Image’ option and run the second prompt. The only setting you need to touch is the aspect ratio (I use 3:4).
 
+#### **Prompt 2**
+
 ```
-Prompt 2
 Using the content blueprint in your immediately preceding response, create a visually striking handwritten educational infographic. Treat the blueprint as the authoritative source. Preserve its selected central topic, central visual concept, 6–8 knowledge modules, module titles, compact facts, fragments, labels, vocabulary, marked key words, examples, relationships, sequences, and comparisons, including every span it marked with ==double equals==. Keep the wording compact: reproduce the supplied text, but never expand fragments into complete sentences, explanations, or paragraphs. Do not invent additional facts, categories, modules, examples, conclusions, or interpretations. Do not repeat information already presented in another module. Do not create separate sections called “Why It Matters,” “Key Points/Terms,” “Summary,” “Recap,” “Conclusion,” or “Takeaways.” If the blueprint does not include a particular type of information, do not add it merely to fill space.
 
 Choose the most appropriate visual treatment for the supplied information. Let visuals carry the explanation wherever possible. Use diagrams, maps, timelines, cross-sections, comparison panels, process arrows, charts, equations, labelled components, compact definitions, and classroom-style sketches only when they genuinely suit the topic. Prefer a label, arrow, symbol, date, number, or short fragment over explanatory prose.
@@ -78,12 +79,13 @@ The central title sits in a simple hand-drawn rectangular box with a clean black
 
 Each knowledge module must include:
 
-an unnumbered handwritten header in all-caps
-1–3 simple topic-specific doodles
-the most suitable diagram, chart, example, or sub-panel when useful
-concise labels and precise annotations
-the blueprint’s marked spans highlighted within their original compact text
-meaningful visual connections to the central topic
+-   an unnumbered handwritten header in all-caps
+-   1–3 simple topic-specific doodles
+-   the most suitable diagram, chart, example, or sub-panel when useful
+-   concise labels and precise annotations
+-   the blueprint’s marked spans highlighted within their original compact text
+-   meaningful visual connections to the central topic
+
 Do not place the modules inside rigid frames, cards, panels, or complete boxes. Separate them using a varied mix of generous white space, unnumbered headers, arrows, and loose hand-drawn separators: a short underline, partial box corners, a wavy or cloud-like line, a rough L-shape, a dotted divider, or no separator at all. These marks should be irregular, slightly wobbly, incomplete, and open rather than clean geometric borders. Never let a separator enclose a whole module or make it look like a digital card. Do not draw rounded cards, UI panels, sticker frames, coloured section backgrounds, or polished rectangular outlines. The only fully enclosed shapes on the page are the title box, speech and thought bubbles, and a small plain table when the information is genuinely tabular.
 
 Draw the doodles as simple line cartoons, the way a teacher sketches on a whiteboard. Use people with round white heads, clearly visible simple eyes, a curved mouth when appropriate, and thin straight limbs. Every human figure must have at least one simple, clearly readable visual identifier derived from that person’s role, occupation, historical or cultural setting, activity, status, or relationship to the topic. Choose a distinctive prop, item of clothing, hairstyle, posture, tool, companion, or other contextual cue that helps the viewer tell the figure apart from other people; vary these identifiers across figures and avoid repeating the same generic person. Keep faces minimal but expressive and readable; do not omit the eyes. Draw objects as recognisable outlines with one or two identifying details. Keep the line black, thin, and slightly wobbly rather than polished. Avoid stock illustrations, realistic anatomy, detailed faces, complex textures, elaborate perspective, glossy surfaces, commercial pictograms, and finished editorial-cartoon character design.
@@ -100,7 +102,7 @@ Use clear, legible English and reproduce all supplied titles, labels, vocabulary
 
 Visual style: loose, hand-drawn classroom sketchnote; bright white paper; simple contextual line cartoons; open, irregular module structure; restrained colour; compact information; friendly and highly legible.
 
-Aspect Ratio: [3:4, 1:1, 9:16, 16:9]
+Aspect Ratio: `[3:4, 1:1, 9:16, 16:9]`
 ```
 
 A few seconds later, this is what comes back.
