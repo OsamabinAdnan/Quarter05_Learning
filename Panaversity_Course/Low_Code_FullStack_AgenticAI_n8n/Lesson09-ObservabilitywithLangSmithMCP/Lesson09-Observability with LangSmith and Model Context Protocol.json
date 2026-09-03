@@ -1,0 +1,156 @@
+{
+  "name": "Class09-Observability with LangSmith and Model Context Protocol",
+  "nodes": [
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.chatTrigger",
+      "typeVersion": 1.4,
+      "position": [
+        -416,
+        -96
+      ],
+      "id": "3a59a5e2-f174-4309-ad09-940e10ca9fee",
+      "name": "When chat message received",
+      "webhookId": "a02a3382-41d7-4d41-ae9c-d032aab461c0"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 3.1,
+      "position": [
+        -48,
+        -144
+      ],
+      "id": "e260054e-2e97-47be-a77e-e89fd2304997",
+      "name": "AI Agent"
+    },
+    {
+      "parameters": {
+        "model": "openrouter/free",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenRouter",
+      "typeVersion": 1,
+      "position": [
+        -144,
+        48
+      ],
+      "id": "5e93014d-b553-45b9-a22f-f38df3c6586e",
+      "name": "OpenRouter Chat Model Arham",
+      "credentials": {
+        "openRouterApi": {
+          "id": "YLcb0xu10MiRZIHg",
+          "name": "OpenRouter account"
+        }
+      }
+    },
+    {
+      "parameters": {},
+      "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
+      "typeVersion": 1.4,
+      "position": [
+        48,
+        64
+      ],
+      "id": "10333b2a-e0da-4f48-8cda-15fb4e64e3e3",
+      "name": "Simple Memory"
+    },
+    {
+      "parameters": {
+        "documentId": {
+          "__rl": true,
+          "value": "15zPRp8tqX9CdoYFVWueoiDeNNK1rAlKQG85bWaNt9aI",
+          "mode": "list",
+          "cachedResultName": "Company Sheet",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/15zPRp8tqX9CdoYFVWueoiDeNNK1rAlKQG85bWaNt9aI/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "gid=0",
+          "mode": "list",
+          "cachedResultName": "Sheet1",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/15zPRp8tqX9CdoYFVWueoiDeNNK1rAlKQG85bWaNt9aI/edit#gid=0"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheetsTool",
+      "typeVersion": 4.7,
+      "position": [
+        256,
+        48
+      ],
+      "id": "3acc3a24-1ea5-472d-bff5-5ba3ce448479",
+      "name": "Get Company Information",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "LKaxHhwpjq2ejAWR",
+          "name": "Google Sheets account 2"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When chat message received": {
+      "main": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenRouter Chat Model Arham": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Simple Memory": {
+      "ai_memory": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_memory",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get Company Information": {
+      "ai_tool": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "88571588-2605-43aa-9e5c-2bc906fb09e8",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "685087c8cbc7e1a09b4a0a0012ee471db26d57e5ad3ebc7d2412f75d51473165"
+  },
+  "nodeGroups": [],
+  "id": "9mt7C9sd0bfN98Dq",
+  "tags": []
+}

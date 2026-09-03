@@ -37,6 +37,7 @@
 - Explains certification structure, proctoring rules, and developer setup shortcuts.
 - Details the traveling schema, expressions, data access patterns, and Code Node logic.
 - Ends with transformation methods, boolean routing, and troubleshooting guidance.
+- Email/Gmail Sub-Mapping Tutorial
 
 ### Lesson 06 — Large Language Model Mechanics and n8n Agentic Workflow Architecture
 - Explores how LLMs generate tokens, handle stop conditions, and manage context.
@@ -59,6 +60,16 @@
 - Demonstrates RAG pipeline architecture with Pinecone vector database and embedding model integration.
 - Provides technical infrastructure setup for Google Cloud Console OAuth 2.0 and Pinecone configuration.
 - Includes data ingestion, text chunking, and query generation phases with troubleshooting insights.
+
+### Lesson 09 — n8n Observability with LangSmith and Model Context Protocol (MCP)
+- Frames the shift from building AI agents to observing, monitoring, and standardizing them for production-grade deployment.
+- Explains LangSmith observability for tracing, latency analysis, token usage, and operational unit economics.
+- Covers the self-hosted n8n requirement, environment variables, and telemetry setup for deep-trace monitoring.
+- Describes MCP as a protocol-agnostic standard with client-server roles, transport modes, and plug-and-play tool discovery.
+- Shows n8n functioning as both an MCP Server and MCP Client for external and internal tool interoperability.
+- Compares manual API integration with MCP standardization and highlights universal interoperability benefits.
+- Contrasts n8n with OpenAI Agent Kit/Builder across focus, integrations, decision style, and deployment approach.
+- Discusses conversational UI, vibe coding risks, spec-driven development, and the importance of ethical integrity in AI systems.
 
 ### 17 Essential n8n Nodes for Automation Mastery
 - Applies the 80/20 rule to identify the highest-value n8n nodes for workflow engineering.

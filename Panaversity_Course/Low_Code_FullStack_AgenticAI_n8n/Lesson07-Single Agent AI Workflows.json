@@ -1,0 +1,213 @@
+{
+  "name": "Class07-Single Agent AI Workflows",
+  "nodes": [
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.chatTrigger",
+      "typeVersion": 1.4,
+      "position": [
+        -656,
+        -176
+      ],
+      "id": "4be107e5-d2a3-4599-9e2b-5027dc4b3603",
+      "name": "When chat message received",
+      "webhookId": "c291536c-53da-4b1e-9415-aceacfdd8951"
+    },
+    {
+      "parameters": {
+        "options": {
+          "systemMessage": "You are a helpful assistant"
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 3.1,
+      "position": [
+        -432,
+        -176
+      ],
+      "id": "b2732fc7-3280-47fa-a813-c0916373f7f0",
+      "name": "AI Agent"
+    },
+    {
+      "parameters": {
+        "model": "minimax/minimax-m2.7:free",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenRouter",
+      "typeVersion": 1,
+      "position": [
+        -672,
+        48
+      ],
+      "id": "72cc6940-6cfc-4659-88e5-fd0867dd2553",
+      "name": "OpenRouter Chat Model",
+      "credentials": {
+        "openRouterApi": {
+          "id": "fs8mYQpzU74PUKn0",
+          "name": "OpenRouter account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "contextWindowLength": 10
+      },
+      "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
+      "typeVersion": 1.4,
+      "position": [
+        -480,
+        48
+      ],
+      "id": "1a453d44-cdc5-48ff-96aa-d5071660bb13",
+      "name": "Simple Memory"
+    },
+    {
+      "parameters": {
+        "descriptionType": "manual",
+        "toolDescription": "Call this tool to get user data, such as Name, Email, Phone, Notes",
+        "documentId": {
+          "__rl": true,
+          "value": "14Fd52FGK-1URdbktIkp6-aN7rB62icvfUYxbbM_EF7g",
+          "mode": "list",
+          "cachedResultName": "Contacts_CSV_template.csv",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/14Fd52FGK-1URdbktIkp6-aN7rB62icvfUYxbbM_EF7g/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "gid=0",
+          "mode": "list",
+          "cachedResultName": "Sheet1",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/14Fd52FGK-1URdbktIkp6-aN7rB62icvfUYxbbM_EF7g/edit#gid=0"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheetsTool",
+      "typeVersion": 4.7,
+      "position": [
+        -112,
+        16
+      ],
+      "id": "640e90c4-a1f2-4a5c-9e71-df5c9382d77c",
+      "name": "Get Contact Data",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "F5NDojbPdmFRlvmg",
+          "name": "Google Sheets account 2"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "descriptionType": "manual",
+        "toolDescription": "Call this tool to Create an event in Google Calendar",
+        "calendar": {
+          "__rl": true,
+          "value": "osamabinadnan.forapionly@gmail.com",
+          "mode": "list",
+          "cachedResultName": "osamabinadnan.forapionly@gmail.com"
+        },
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.googleCalendarTool",
+      "typeVersion": 1.3,
+      "position": [
+        -288,
+        32
+      ],
+      "id": "ba5ea4e4-99a2-4e24-aeb1-45758b12098f",
+      "name": "Event Calender",
+      "credentials": {
+        "googleCalendarOAuth2Api": {
+          "id": "YuWN3uaabWtQcUjz",
+          "name": "Google Calendar account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When chat message received": {
+      "main": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenRouter Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Simple Memory": {
+      "ai_memory": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_memory",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get Contact Data": {
+      "ai_tool": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Event Calender": {
+      "ai_tool": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "edbba64a-ceab-4a5e-8c30-f14d3097ae65",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "dfc165042e4dcf5963a10370b482842f7f0919a5b9baddcb58ed4508e242851c"
+  },
+  "nodeGroups": [],
+  "id": "YTqW7YdH2H44re8U",
+  "tags": [
+    {
+      "updatedAt": "2026-08-18T14:47:51.254Z",
+      "createdAt": "2026-08-18T14:47:51.254Z",
+      "id": "0G0wcgDKxRgpBupJ",
+      "name": "Panaversity"
+    },
+    {
+      "updatedAt": "2026-08-22T20:06:44.933Z",
+      "createdAt": "2026-08-22T20:06:44.933Z",
+      "id": "aXYVrwQIO6CE6bTZ",
+      "name": "n8nCourse"
+    }
+  ]
+}

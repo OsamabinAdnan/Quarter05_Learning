@@ -1,0 +1,117 @@
+{
+  "name": "Class09-MCP",
+  "nodes": [
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.chatTrigger",
+      "typeVersion": 1.4,
+      "position": [
+        -384,
+        -64
+      ],
+      "id": "2f595d6b-cc4f-4343-9b84-76bd7cb96be3",
+      "name": "When chat message received",
+      "webhookId": "a02a3382-41d7-4d41-ae9c-d032aab461c0"
+    },
+    {
+      "parameters": {
+        "options": {
+          "systemMessage": "You are a helpful assistant"
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 3.1,
+      "position": [
+        -16,
+        -112
+      ],
+      "id": "917867d0-8524-446d-91a2-16d2387b3d66",
+      "name": "AI Agent"
+    },
+    {
+      "parameters": {
+        "model": "openrouter/free",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenRouter",
+      "typeVersion": 1,
+      "position": [
+        -112,
+        80
+      ],
+      "id": "c47386db-47de-40c6-91fb-48b798bc667e",
+      "name": "OpenRouter Chat Model Arham",
+      "credentials": {
+        "openRouterApi": {
+          "id": "9wXoREbLpVfelUhc",
+          "name": "OpenRouter Freelancing account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "endpointUrl": "https://osamabinadnan-ainews-one.app.n8n.cloud/mcp/bac91aca-8dd3-4464-8eed-9f91692bcbf0",
+        "serverTransport": "sse",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.mcpClientTool",
+      "typeVersion": 1.4,
+      "position": [
+        272,
+        80
+      ],
+      "id": "1d8d73fa-b227-4f2a-bf07-9f4464dad341",
+      "name": "MCP Client"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When chat message received": {
+      "main": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenRouter Chat Model Arham": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "MCP Client": {
+      "ai_tool": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "b1479da2-af94-4963-b0f8-e4abc97d19bd",
+  "meta": {
+    "instanceId": "685087c8cbc7e1a09b4a0a0012ee471db26d57e5ad3ebc7d2412f75d51473165"
+  },
+  "nodeGroups": [],
+  "id": "dsSuftBFUNR2Kkfs",
+  "tags": []
+}

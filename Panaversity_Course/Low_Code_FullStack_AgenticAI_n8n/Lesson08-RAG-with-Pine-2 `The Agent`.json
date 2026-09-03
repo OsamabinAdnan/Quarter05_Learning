@@ -1,0 +1,250 @@
+{
+  "name": "Lesson08-RAG-with-Pine-2 `The Agent`",
+  "nodes": [
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.chatTrigger",
+      "typeVersion": 1.4,
+      "position": [
+        -352,
+        -32
+      ],
+      "id": "9f37e97c-3539-4153-b898-634d2a6b439f",
+      "name": "When chat message received",
+      "webhookId": "f4c04f6e-99ef-4e4c-a282-1849a57ed1fc"
+    },
+    {
+      "parameters": {
+        "options": {
+          "systemMessage": "You are a helpful assistant, always use tool when asking about Osama bin Adnan"
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 3.1,
+      "position": [
+        -128,
+        -32
+      ],
+      "id": "7be64edb-b13c-4009-956f-d6fa9deeded4",
+      "name": "AI Agent"
+    },
+    {
+      "parameters": {
+        "model": "openrouter/free",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenRouter",
+      "typeVersion": 1,
+      "position": [
+        -320,
+        192
+      ],
+      "id": "71e62c27-1d10-4c91-bc58-6d814d895821",
+      "name": "OpenRouter Chat Model",
+      "credentials": {
+        "openRouterApi": {
+          "id": "8GccNuwDnihyns8a",
+          "name": "OpenRouter freelancing"
+        }
+      }
+    },
+    {
+      "parameters": {},
+      "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
+      "typeVersion": 1.4,
+      "position": [
+        -192,
+        192
+      ],
+      "id": "b59decf8-c8b7-4bd8-9d9d-8eefe9f371e1",
+      "name": "Simple Memory"
+    },
+    {
+      "parameters": {
+        "description": "You have Osama bin Adnan's resume"
+      },
+      "type": "@n8n/n8n-nodes-langchain.toolVectorStore",
+      "typeVersion": 1.1,
+      "position": [
+        240,
+        48
+      ],
+      "id": "fc4a5734-caea-4924-a380-35cfae41dfc4",
+      "name": "Answer questions with a vector store"
+    },
+    {
+      "parameters": {
+        "pineconeIndex": {
+          "__rl": true,
+          "value": "n8n-class08-rag-with-pinecone",
+          "mode": "list",
+          "cachedResultName": "n8n-class08-rag-with-pinecone"
+        },
+        "options": {
+          "pineconeNamespace": "Osama bin Adnan's resume"
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.vectorStorePinecone",
+      "typeVersion": 1.3,
+      "position": [
+        32,
+        192
+      ],
+      "id": "ffaadb71-645e-4bdb-80a7-07ed9098cb24",
+      "name": "Pinecone Vector Store",
+      "credentials": {
+        "pineconeApi": {
+          "id": "1nbLW93We4CQQY4C",
+          "name": "Pinecone account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.embeddingsOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        32,
+        336
+      ],
+      "id": "247e1697-aa5c-4124-b54b-457074fe47c0",
+      "name": "Embeddings OpenAI",
+      "credentials": {
+        "openAiApi": {
+          "id": "Z526rLUX76WwO1HM",
+          "name": "n8n free OpenAI API credits"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "model": "openrouter/free",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenRouter",
+      "typeVersion": 1,
+      "position": [
+        432,
+        176
+      ],
+      "id": "172c66cd-b73e-4448-9af6-f11b039c4603",
+      "name": "OpenRouter Chat Model1",
+      "credentials": {
+        "openRouterApi": {
+          "id": "fs8mYQpzU74PUKn0",
+          "name": "OpenRouter account Arham"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When chat message received": {
+      "main": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenRouter Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Simple Memory": {
+      "ai_memory": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_memory",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Answer questions with a vector store": {
+      "ai_tool": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Pinecone Vector Store": {
+      "ai_vectorStore": [
+        [
+          {
+            "node": "Answer questions with a vector store",
+            "type": "ai_vectorStore",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Embeddings OpenAI": {
+      "ai_embedding": [
+        [
+          {
+            "node": "Pinecone Vector Store",
+            "type": "ai_embedding",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenRouter Chat Model1": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Answer questions with a vector store",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "56b0d8a3-c307-4dd0-b488-832deed6bded",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "dfc165042e4dcf5963a10370b482842f7f0919a5b9baddcb58ed4508e242851c"
+  },
+  "nodeGroups": [],
+  "id": "RkzuZ0opeOIm5J4Y",
+  "tags": [
+    {
+      "updatedAt": "2026-08-18T14:47:51.254Z",
+      "createdAt": "2026-08-18T14:47:51.254Z",
+      "id": "0G0wcgDKxRgpBupJ",
+      "name": "Panaversity"
+    },
+    {
+      "updatedAt": "2026-08-22T20:06:44.933Z",
+      "createdAt": "2026-08-22T20:06:44.933Z",
+      "id": "aXYVrwQIO6CE6bTZ",
+      "name": "n8nCourse"
+    }
+  ]
+}
