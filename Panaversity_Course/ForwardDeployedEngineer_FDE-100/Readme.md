@@ -11,3 +11,10 @@ Official YouTube Playlist: **[FDE-100: Getting Paid in the AI Era as a Forward D
     * Details the four imperatives: stochasticity mitigation, public data accuracy, honest refusal, and private data integration.
     * Covers the eight core KSoR concepts: official book, content selection, stamps, access governance, "I don't know" mandate, citations, ingestion pipeline, and multimodal interfaces.
     * Explains FDE role in building vertical KSoRs, digital twins, and the technical implementation prerequisites.
+- **Class 04:**
+    * Covers the Anthropic Claude certification track across four levels: Associate Foundations, Architect Foundations, Developer, and Architect Professional.
+    * Introduces the "Proof You Can Carry" paradigm built on certifications, open-source foundations, and proprietary vertical Systems of Record.
+    * Provides a technical deep dive into the KSoR framework: local setup, project folder structure, and NodeJS v24+ prerequisites.
+    * Explains the Human Surface for governance and knowledge management, including live-syncing markdown, agent skills, and llm.txt autogeneration.
+    * Details the Agent Surface and MCP serving with Neon database integration, PG Vector for semantic RAG, and vendor-neutral configuration.
+    * Covers operational excellence: data privacy via OAuth/OIDC, the state vs. policy distinction for CRM/ERP, scalability with Postgres, and the multimodal media roadmap.
