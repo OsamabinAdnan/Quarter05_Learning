@@ -14,4 +14,6 @@ This course has something for everyone, whether you're new to Claude or a season
 - [Why do we need AI Fluency?](2-TheAIFluencyFramework/2.1-WhyDoWeNeedAIFluency.md)
 - [The 4D Framework](2-TheAIFluencyFramework/2.2-The4Dframework.md)
 - [What is Generative AI?](3-DeepDive01-WhatIsGenerativeAI/3.1-GenerativeAIFundamentals.md)
-
+- [Capabilities & Limitations of LLMs](3-DeepDive01-WhatIsGenerativeAI/3.2-Capabilities&limitations.md)
+- [A Closer Look at Delegation](4-Delegation/4.1-ACloserLookAtDelegation.md)
+- [Project Planning & Delegation](4-Delegation/4.2-ProjectPlanning&Delegation.md)
