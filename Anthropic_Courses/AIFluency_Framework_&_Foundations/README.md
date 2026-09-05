@@ -17,3 +17,5 @@ This course has something for everyone, whether you're new to Claude or a season
 - [Capabilities & Limitations of LLMs](3-DeepDive01-WhatIsGenerativeAI/3.2-Capabilities&limitations.md)
 - [A Closer Look at Delegation](4-Delegation/4.1-ACloserLookAtDelegation.md)
 - [Project Planning & Delegation](4-Delegation/4.2-ProjectPlanning&Delegation.md)
+- [A Closer Look at Description](5-Description/5.1-ACloserLookAtDescription.md)
+- [Effective Prompting Techniques](6-DeepDive02-EffectivePromptingTechniques/6.1-EffectivePromptingTechniques.md)
