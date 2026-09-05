@@ -10,6 +10,7 @@ This course has something for everyone, whether you're new to Claude or a season
 
 ## Course Structure
 
-- [Introduction to AI Fluency](1-IntroductionToAIFluency.md)
-- [Why do we need AI Fluency?](2-WhyDoWeNeedAIFluency.md)
+- [Introduction to AI Fluency](1-IntroductionToAIFluency/1-IntroductionToAIFluency.md)
+- [Why do we need AI Fluency?](2-TheAIFluencyFramework/2.1-WhyDoWeNeedAIFluency.md)
+- [The 4D Framework](2-TheAIFluencyFramework/2.2-The4Dframework.md)
 

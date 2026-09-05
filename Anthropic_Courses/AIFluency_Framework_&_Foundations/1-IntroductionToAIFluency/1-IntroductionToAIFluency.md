@@ -17,7 +17,7 @@ Establishing a credible AI education framework requires theoretical rigor, creat
 ---
 
 <div align="center">
-  <img src="assets/Lesson01-01.webp" alt="Institutional Leadership and the Instructional Team" width="800">
+  <img src="../assets/Lesson01-01.webp" alt="Institutional Leadership and the Instructional Team" width="800">
   <p><b><u>Institutional Leadership and the Instructional Team</u></b></p>
 </div>
 
@@ -37,7 +37,7 @@ Sophisticated AI collaboration requires a fundamental cognitive shift. Most user
 ---
 
 <div align="center">
-  <img src="assets/Lesson01-02.webp" alt="The Paradigm Shift: From Tool to Trusted Partner" width="800">
+  <img src="../assets/Lesson01-02.webp" alt="The Paradigm Shift: From Tool to Trusted Partner" width="800">
   <p><b><u>The Paradigm Shift: From Tool to Trusted Partner</u></b></p>
 </div>
 
@@ -60,7 +60,7 @@ Over the last few years, AI has transformed from specialized technologies to int
 ---
 
 <div align="center">
-  <img src="assets/Lesson01-03.webp" alt="Environmental Analysis: Navigating the Crisis of Modern AI Adoption" width="800">
+  <img src="../assets/Lesson01-03.webp" alt="Environmental Analysis: Navigating the Crisis of Modern AI Adoption" width="800">
   <p><b><u>Environmental Analysis: Navigating the Crisis of Modern AI Adoption</u></b></p>
 </div>
 
@@ -86,7 +86,7 @@ To distinguish fluency from mere technical literacy or tactical tricks, a rigoro
 ---
 
 <div align="center">
-  <img src="assets/Lesson01-04.webp" alt="Defining the Standard: The Four Pillars of AI Fluency" width="800">
+  <img src="../assets/Lesson01-04.webp" alt="Defining the Standard: The Four Pillars of AI Fluency" width="800">
   <p><b><u>Defining the Standard: The Four Pillars of AI Fluency</u></b></p>
 </div>
 
@@ -114,7 +114,7 @@ Final gatekeeper of professional integrity. Asks: How do we ensure our interacti
 ---
 
 <div align="center">
-  <img src="assets/Lesson01-05.webp" alt="The 4Ds Framework: Core Competencies for Collaboration" width="800">
+  <img src="../assets/Lesson01-05.webp" alt="The 4Ds Framework: Core Competencies for Collaboration" width="800">
   <p><b><u>The 4Ds Framework: Core Competencies for Collaboration</u></b></p>
 </div>
 
@@ -135,7 +135,7 @@ In a rapidly evolving technological environment, education must prioritize core 
 ---
 
 <div align="center">
-  <img src="assets/Lesson01-06.webp" alt="Pedagogical Methodology: Deep Understanding vs. Tactical Training" width="800">
+  <img src="../assets/Lesson01-06.webp" alt="Pedagogical Methodology: Deep Understanding vs. Tactical Training" width="800">
   <p><b><u>Pedagogical Methodology: Deep Understanding vs. Tactical Training</u></b></p>
 </div>
 
@@ -158,7 +158,7 @@ Achieving AI Fluency provides a long-term value proposition that moves professio
 ---
 
 <div align="center">
-  <img src="assets/Lesson01-07.webp" alt="Synthesized Learning Outcomes and Professional Impact" width="800">
+  <img src="../assets/Lesson01-07.webp" alt="Synthesized Learning Outcomes and Professional Impact" width="800">
   <p><b><u>Synthesized Learning Outcomes and Professional Impact</u></b></p>
 </div>
 
