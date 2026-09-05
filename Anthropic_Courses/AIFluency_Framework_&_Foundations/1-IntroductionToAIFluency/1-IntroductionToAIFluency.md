@@ -1,4 +1,4 @@
-# Lesson 01: Introduction & Foundations of AI Fluency
+# Lesson 1.1: Introduction & Foundations of AI Fluency
 
 ---
 
