@@ -22,3 +22,9 @@ This course has something for everyone, whether you're new to Claude or a season
 - [A Closer Look at Discernment](7-Discernment/7.1-ACloserLookAtDiscernment.md)
 - [The Description-Discernment Loop (Hand-on Exercise)](8-TheDescription-DiscernmentLoop/8.1-TheDescription-DiscernmentLoop.md)
 - [A Closer Look at Diligence](9-Diligence/9.1-ACloserLookAtDiligence.md)
+- [Course Conclusion](10-Conclusion&Certificate/10.1-Conclusion.md)
+- [Additional Activities for Practice](10-Conclusion&Certificate/10.2-Additional_Activities.md)
+
+## Check Link for Certificate
+
+[Certificate of Completion](https://verify.skilljar.com/c/hd8ratskyy5q)
