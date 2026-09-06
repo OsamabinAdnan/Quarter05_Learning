@@ -19,3 +19,6 @@ This course has something for everyone, whether you're new to Claude or a season
 - [Project Planning & Delegation](4-Delegation/4.2-ProjectPlanning&Delegation.md)
 - [A Closer Look at Description](5-Description/5.1-ACloserLookAtDescription.md)
 - [Effective Prompting Techniques](6-DeepDive02-EffectivePromptingTechniques/6.1-EffectivePromptingTechniques.md)
+- [A Closer Look at Discernment](7-Discernment/7.1-ACloserLookAtDiscernment.md)
+- [The Description-Discernment Loop (Hand-on Exercise)](8-TheDescription-DiscernmentLoop/8.1-TheDescription-DiscernmentLoop.md)
+- [A Closer Look at Diligence](9-Diligence/9.1-ACloserLookAtDiligence.md)
