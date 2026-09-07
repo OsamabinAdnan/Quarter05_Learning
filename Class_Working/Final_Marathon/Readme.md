@@ -41,6 +41,20 @@ Comprehensive class notes from GIAIC's Final Marathon covering the transition fr
 
 ---
 
+## Week 03: Cockpit Mastery & Multi-Interface Fluency
+
+### Class 04 (September 05, 2026): Claude & ChatGPT 101 Crash Course
+
+- **Core Philosophy**: 9 Concepts · 2 Cockpits · 1 Discipline (Panaversity Agent Factory Foundations)
+- **The Cockpit**: Shared platform anatomy; 3-Tier Model Pattern (Fast Default, Thinking/Reasoning, Heavy Flagship); Context attachment & State Summary Pattern
+- **Workspace Architecture**: Claude Projects (automated RAG up to 10x) vs. ChatGPT Projects (Project-Only Memory); Persistence Triad (Standing Instructions, Memory, Projects)
+- **Work Containers & Integration**: Claude Artifacts vs. ChatGPT Writing/Code Blocks; Agent Skills Open Standard (`agentskills.io`); Model Context Protocol (MCP) as "USB-C for AI tools"
+- **Evaluation & Career**: 5-Step AI Trust Loop (proving on human-verified golden benchmarks); transition to global consulting ($10,000/month benchmark, 5+ income streams)
+
+**[Full Notes](Week03/Class04_05092026/Readme.md)**
+
+---
+
 ## Learning Trajectory
 
 **Week 01**: Market shift understanding, FDE role definition, System of Record architecture (RAG/MCP)  
