@@ -55,10 +55,24 @@ Comprehensive class notes from GIAIC's Final Marathon covering the transition fr
 
 ---
 
+### Class 05 (September 06, 2029): Engineering Skills and Connectors in AI Automation
+
+- **Core Definitions**: Chat messages are one-off instructions; skills package repeatable workflows; connectors provide authorized access to external systems
+- **Agent Architecture**: Modern agents use a harness that combines tools, memory, context, guardrails, and MCP around the LLM
+- **Skill Engineering**: Narrow skill scope, kebab-case directories, YAML front matter, supporting `scripts/`, `references/`, and `assets/` folders, plus slash-command or implicit invocation
+- **Progressive Disclosure**: Load skill metadata first, full instructions on demand, and deeper resources only when required to protect context capacity
+- **Connectors & Co-workers**: MCP standardizes access to external applications, while heartbeat, connectors, agent loops, state spine, human approval, and execution body form the six pillars of general agents
+- **Practical Automation**: Resume screening and project-board workflows demonstrate how connectors, skills, and scripts work together
+
+**[Full Notes](Week03/Class05_06092029/Readme.md)**
+
+---
+
 ## Learning Trajectory
 
 **Week 01**: Market shift understanding, FDE role definition, System of Record architecture (RAG/MCP)  
 **Week 02**: Loop Engineering mastery, certification pathway, practical case studies  
+**Week 03**: Cockpit mastery, multi-interface fluency, skills, connectors, and general-agent architecture  
 **Next**: Graph Engineering, multi-departmental AI coordination, vertical system deployment
 
 ---
