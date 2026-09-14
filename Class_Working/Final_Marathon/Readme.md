@@ -68,11 +68,27 @@ Comprehensive class notes from GIAIC's Final Marathon covering the transition fr
 
 ---
 
+## Week 04: Agent Architecture & Enterprise Integration
+
+### Class 06 (September 12, 2026): AI Agent Architecture and Ecosystem
+
+- **The Harness Race**: Competition shifted from model performance to harness ecosystems (connectors, memory, scheduling, loops, spine)
+- **Interface Duality**: Chat (Q&A, device-specific) vs. Work/Co-worker (cloud execution, persistent tasks, cross-device)
+- **Six Architectural Pillars**: Heartbeat (time/event triggers), Connectors (MCP wrappers), Execution Loop, Spine (persistent state), Human-in-the-Loop (HITL), Body (cloud/local execution)
+- **Project Workspace**: Four elements—Instructions, Scope Memory (LLM-managed), Context/Knowledge Base (RAG), Scheduler (automated frequency)
+- **Enterprise Standards**: Sandbox code execution for grounding, 80/20 AI-human review principle, data hygiene (prune outdated context)
+- **Certification Prep**: 7 domains, 21 skills, 730/1000 mastery threshold; diagnostic testing, learner profile setup, iterative revision
+
+**[Full Notes](Week04/Class06_12092026/Readme.md)**
+
+---
+
 ## Learning Trajectory
 
 **Week 01**: Market shift understanding, FDE role definition, System of Record architecture (RAG/MCP)  
 **Week 02**: Loop Engineering mastery, certification pathway, practical case studies  
 **Week 03**: Cockpit mastery, multi-interface fluency, skills, connectors, and general-agent architecture  
+**Week 04**: Harness ecosystems, project workspaces, enterprise execution standards, certification strategy  
 **Next**: Graph Engineering, multi-departmental AI coordination, vertical system deployment
 
 ---
