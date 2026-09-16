@@ -66,7 +66,45 @@ The shift from Traditional SoR to KSoR represents a transition from Interpretive
 
 * **OPS (Open Policy Standard):** Inspired by the Open Policy Agent (OPA) philosophy, this governs the structure of documents and policies, ensuring they are formatted for cross-platform AI consumption.
 * **MCP (Model Context Protocol):** The industry-standard protocol that facilitates the interaction between the LLM (the "brain") and the KSoR server (the "knowledge/tools").
-* **LLMPAP (Large Language Model Prompt Protocol):** A provider-agnostic standard for AI interactions, specifically designed to prevent vendor lock-in, allowing the KSoR to work seamlessly with Gemini, Claude, or OpenAI.
+* **LLM.txt (Large Language Model .txt):** A provider-agnostic standard for AI interactions, specifically designed to prevent vendor lock-in, allowing the KSoR to work seamlessly with Gemini, Claude, or OpenAI.
+* **OKF (Open Knowledge Format):** The Open Knowledge Format (OKF) is a standard way to organize data and documents using simple Markdown files and YAML tags so AI agents can read and navigate them easily, developed by Google in mid 2026.
+
+    - **Core Structure of an OKF Bundle**
+        An OKF bundle is a folder of text files that usually contains: 
+        - **`index.md`**: A master list that introduces the bundle and helps agents read information step-by-step.
+        - **`log.md`**: A history file tracking recent updates or changes.
+        - **Concept Files (`.md`)**: Individual Markdown files covering specific topics, table schemas, or business rules.
+        - **YAML Frontmatter**: A small header at the top of each file with tags, titles, timestamps, and author details
+    
+    - **Real-World OKF Examples**
+        - **Database and Sales Schema Example**: This example shows how an OKF file documents a database table (like customer orders) and includes SQL query examples for AI agents to use:
+
+    ``` md
+
+    ---
+    type: table
+    title: Sales Orders
+    description: Records of customer purchases
+    tags: [sales, orders, revenue]
+    timestamp: 2026-06-21T00:00:00Z
+    ---
+
+    # Schema | Column | Type | Description
+
+    | `order_id` | STRING | Globally unique order identifier |
+    | `customer_id` | STRING | Foreign key to customers table |
+    | `total_usd` | NUMERIC | Order total in US dollars |
+
+    # Example Query
+
+    ```sql
+    SELECT customer_id, SUM(total_usd) AS lifetime_value 
+    FROM sales.orders 
+    GROUP BY customer_id 
+    ORDER BY lifetime_value DESC 
+    LIMIT 100;
+    
+    ```
 
 ---
 
@@ -82,7 +120,7 @@ The shift from Traditional SoR to KSoR represents a transition from Interpretive
 A KSoR project is architecturally divided into two core directories:
 
 * **knowledge folder:** The "Brain." Contains unstructured or semi-structured Markdown files and metadata.
-* **system folder:** The "Engine." Contains the technical implementation, typically built using Next.js and Shadcn for the UI, along with the logic for the MCP server.
+* **system folder:** The "Engine." Contains the technical implementation, typically built using Next.js + Fumadocs (React library) and Shadcn for the UI, along with the logic for the MCP server.
 
 ### Procedural Governance Layer
 
