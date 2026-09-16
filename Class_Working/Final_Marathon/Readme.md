@@ -83,12 +83,25 @@ Comprehensive class notes from GIAIC's Final Marathon covering the transition fr
 
 ---
 
+### Class 07 (September 13, 2026): Knowledge System of Record (KSoR) Framework and Implementation
+
+- **KSoR Fundamentals**: Knowledge System of Record bridges the gap between human-readable policies and AI-executable logic; serves three consumers—humans (web UI), AI agents (MCP), and discovery engines (metadata)
+- **Traditional vs. AI-Era SoR**: Shift from interpretive systems (Excel, CRM, ERP) where humans read and decide, to operative systems where procedural governance is embedded for autonomous AI execution
+- **Architecture Standards**: Built on provider-agnostic protocols—OPS (Open Policy Standard), MCP (Model Context Protocol), LLMPAP (LLM Prompt Protocol); prevents vendor lock-in across Gemini, Claude, OpenAI
+- **Project Structure**: Two core directories—knowledge folder (unstructured Markdown + metadata) and system folder (Next.js/Shadcn UI + MCP server logic); frontmatter governance tracks status, ownership, trust levels
+- **Implementation Workflow**: CLI initialization (`npx ksor@latest init`), Git tracking for agent changes, Neon Postgres + pgvector for vector persistence, "Interview Skill" extracts tacit knowledge from humans into governed Markdown
+- **Production Deployment**: Local development (localhost:3000 UI, localhost:8080 MCP), Claude Desktop integration via mcp.json, Vercel deployment for global agent access
+
+**[Full Notes](Week04/Class07_13092026/Readme.md)**
+
+---
+
 ## Learning Trajectory
 
 **Week 01**: Market shift understanding, FDE role definition, System of Record architecture (RAG/MCP)  
 **Week 02**: Loop Engineering mastery, certification pathway, practical case studies  
 **Week 03**: Cockpit mastery, multi-interface fluency, skills, connectors, and general-agent architecture  
-**Week 04**: Harness ecosystems, project workspaces, enterprise execution standards, certification strategy  
+**Week 04**: Harness ecosystems, project workspaces, enterprise execution standards, KSoR framework, certification strategy  
 **Next**: Graph Engineering, multi-departmental AI coordination, vertical system deployment
 
 ---
