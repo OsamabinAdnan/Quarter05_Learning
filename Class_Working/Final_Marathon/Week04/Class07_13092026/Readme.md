@@ -97,13 +97,13 @@ The shift from Traditional SoR to KSoR represents a transition from Interpretive
 
     # Example Query
 
-    ```sql
-    SELECT customer_id, SUM(total_usd) AS lifetime_value 
-    FROM sales.orders 
-    GROUP BY customer_id 
-    ORDER BY lifetime_value DESC 
-    LIMIT 100;
-    
+    sql query:
+        SELECT customer_id, SUM(total_usd) AS lifetime_value 
+        FROM sales.orders 
+        GROUP BY customer_id 
+        ORDER BY lifetime_value DESC 
+        LIMIT 100;
+
     ```
 
 ---
