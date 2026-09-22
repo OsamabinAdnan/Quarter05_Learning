@@ -96,12 +96,30 @@ Comprehensive class notes from GIAIC's Final Marathon covering the transition fr
 
 ---
 
+## Week 05: Claude Certification & Autonomous AI Agents
+
+### Class 08 (September 19, 2026): Claude Certification and Autonomous AI Agents
+
+- **Strategic Learning**: Uses the NotebookLM workflow for source integration, abstract understanding, deep dives, debate mode, mind mapping, knowledge validation, and peer teaching; emphasizes MIT's “Mind and Hand” philosophy—execution, rapid iteration, global opportunity, and durable practical skills over credentials alone
+- **Chatbots to Autonomous Agents**: Distinguishes synchronous chatbots from autonomous agents through the “Stop Typing” test—an agent continues multi-step work after the user stops typing or closes the laptop
+- **Six-Part Agent Harness**: Heartbeat initiates work, Reach provides tools and access, the Run-until-done Loop executes toward the goal, the Human Gate provides approval and safety, State preserves progress and memory, and the Body performs work in cloud or local environments
+- **Data Custody Tiers**: Tier 1 is temporary scratch storage, Tier 2 is vendor-controlled persistent storage, and Tier 3 is the user-controlled System of Record; only completed deliverables moved to Tier 3 become permanent source-of-truth data
+- **Reach and Risk Management**: Prefer structured connectors such as MCP and APIs, use built-in browsers when appropriate, and reserve direct computer use as a last resort because of its larger security blast radius; autonomy can operate in Manual, Auto/Session-approved, or Skip modes
+- **Delegation Workflow**: Provide a clear brief, review the agent's plan, approve narrowly scoped permissions, and verify the final output; planning before execution is cheaper than correcting an unchecked failure
+- **Memory and Architecture Trade-offs**: Compares convenient vendor spines with higher-effort open paths, and identifies four persistence types—session history, project context, semantic memory, and standing instructions
+- **Certification Preparation**: Focus on conceptual and scenario-based mastery rather than coding; use flagship cards, peer teaching, and mock exams, attempting the certification only after achieving at least 95% on practice papers
+
+**[Full Notes](Week05/Class08_19092026/Readme.md)**
+
+---
+
 ## Learning Trajectory
 
 **Week 01**: Market shift understanding, FDE role definition, System of Record architecture (RAG/MCP)  
 **Week 02**: Loop Engineering mastery, certification pathway, practical case studies  
 **Week 03**: Cockpit mastery, multi-interface fluency, skills, connectors, and general-agent architecture  
 **Week 04**: Harness ecosystems, project workspaces, enterprise execution standards, KSoR framework, certification strategy  
+**Week 05**: Claude certification, autonomous-agent harnesses, data custody, delegation, reach and risk management  
 **Next**: Graph Engineering, multi-departmental AI coordination, vertical system deployment
 
 ---
