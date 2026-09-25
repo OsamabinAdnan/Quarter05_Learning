@@ -1,0 +1,7 @@
+{
+  "enabledMcpjsonServers": [
+    "Neon",
+    "agentfactory-system-of-record",
+    "handbook"
+  ]
+}
