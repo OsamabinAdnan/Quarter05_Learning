@@ -2,6 +2,8 @@
 
 This study guide provides a complete, self-contained synthesis of AI agent architecture, harness engineering, context management, workflow design, delegation dynamics, and system diagnosis based on the technical lecture.
 
+**[Back to Final Marathon Overview](../../Readme.md)**
+
 ---
 
 ## 1. AI Agents and the Evolution of Harness Engineering

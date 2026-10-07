@@ -113,13 +113,42 @@ Comprehensive class notes from GIAIC's Final Marathon covering the transition fr
 
 ---
 
+### Class 09 (September 20, 2026): AI Agents, Harness Engineering, Workflows, and System Diagnosis
+
+- **Agent Architecture**: Redefines an agent as an LLM plus a complete harness containing context, memory, connectors, guardrails, triggers, execution loops, and human validation gates
+- **Agent Types and Execution Bodies**: Distinguishes reactive normal agents from proactive AI workers, and explains how local versus cloud execution affects persistence and hardware-dependent steps
+- **Six Harness Pillars**: Heartbeat/trigger, connectors through MCP, execution loop, state and memory, human gate, and execution body form the operational foundation of reliable agents
+- **Context and File Systems**: Covers the hierarchy of standing instructions, project context, semantic memory, session history, and files/connectors, alongside task, platform, and egress file classifications
+- **Governance and Delegation**: Defines one-time, recurring, event-based, and monitoring triggers; compares manual approval, automatic approval, and skip-all modes; and evaluates delegation through reversibility, stakes, and accountability
+- **Workflow Diagnosis**: Separates successful workflow execution from successful outcomes, identifies halo delegation, abdication, and tool mis-mapping, and promotes the structured “My workflow uses AI” mindset with explicit human review nodes
+
+**[Full Notes](Week05/Class09_20092026/Readme.md)**
+
+---
+
+## Week 07: AI Scenario Analysis, Delegation Frameworks, and Exam Strategies
+
+### Class 12 (October 03, 2026): AI Scenario Analysis, Delegation Frameworks, and Exam Strategies
+
+- **Scenario Parsing**: Uses a five-part model—company context, problem statement, action statement, workflow/output, and hidden clues—combined with question-first scanning for rapid exam analysis
+- **Option Evaluation**: Classifies multiple-choice distractors as the Trusting Move, Nervous Move, Overreaction, or the Smallest Sufficient Move, with targeted intervention as the preferred answer pattern
+- **Delegation Governance**: Applies the six-stage “Just Delegate It” lifecycle—Define, Delegate, Observe, Intervene, Verify, and retain human Ownership—alongside the 4 Ds of Delegating, Descriptive briefing, Dissent/validation, and Diligence/ownership
+- **Failure Modes**: Diagnoses hallucination, mathematical computation errors, sycophancy and confirmation bias, unbounded autonomy, incomplete delegation, and over-permissioning through practical operational scenarios
+- **Capability and Security Boundaries**: Distinguishes parametric memory, web search, and deep reasoning; reinforces human validation, neutral prompting, named approval for irreversible actions, and least-privilege connector access
+- **Applied Case Studies**: Demonstrates the smallest sufficient corrective action across courier dispatch, supplier costing, travel booking, operations decisions, course research, workspace integrations, and invoice approval
+
+**[Full Notes](Week07/Class12_03102026/Readme.md)**
+
+---
+
 ## Learning Trajectory
 
-**Week 01**: Market shift understanding, FDE role definition, System of Record architecture (RAG/MCP)  
-**Week 02**: Loop Engineering mastery, certification pathway, practical case studies  
-**Week 03**: Cockpit mastery, multi-interface fluency, skills, connectors, and general-agent architecture  
-**Week 04**: Harness ecosystems, project workspaces, enterprise execution standards, KSoR framework, certification strategy  
-**Week 05**: Claude certification, autonomous-agent harnesses, data custody, delegation, reach and risk management  
+**Week 01**: Market shift understanding, FDE role definition, System of Record architecture (RAG/MCP)<br>
+**Week 02**: Loop Engineering mastery, certification pathway, practical case studies<br>
+**Week 03**: Cockpit mastery, multi-interface fluency, skills, connectors, and general-agent architecture<br>
+**Week 04**: Harness ecosystems, project workspaces, enterprise execution standards, KSoR framework, certification strategy<br>
+**Week 05**: Claude certification, autonomous-agent harnesses, data custody, delegation, reach and risk management, workflow design, and system diagnosis<br>
+**Week 07**: Scenario parsing, option-shape analysis, delegation governance, AI failure modes, and exam strategy<br>
 **Next**: Graph Engineering, multi-departmental AI coordination, vertical system deployment
 
 ---
